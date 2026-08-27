@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj": {}
+    "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj": {
+    "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj",
         "projectName": "MVC-MiniProject",
-        "projectPath": "C:\\Users\\User\\source\\repos\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\MVC-MiniProject.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\MVC-MiniProject\\MVC-MiniProject\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,28 @@
         "net8.0": {
           "framework": "net8.0",
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.30, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
