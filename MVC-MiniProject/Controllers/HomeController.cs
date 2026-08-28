@@ -11,18 +11,21 @@ namespace MVC_MiniProject.Controllers
         private readonly ISettingService _settingService;
         private readonly IEventService _eventService;
         private readonly INewsService _newsService;
+        private readonly ICourseInfoService _courseInfoService;
 
         public HomeController(IIconService iconService,
                               ISliderService sliderService,
                               ISettingService settingService,
                               IEventService eventService,
-                              INewsService newsService)
+                              INewsService newsService,
+                              ICourseInfoService courseInfoService)
         {
             _iconService = iconService;
             _sliderService = sliderService;
             _settingService = settingService;
             _eventService = eventService;
             _newsService = newsService;
+            _courseInfoService = courseInfoService;
         }
         public async Task<IActionResult> Index()
         {
@@ -31,13 +34,15 @@ namespace MVC_MiniProject.Controllers
             var settings = await _settingService.GetAllUIAsync();
             var events = await _eventService.GetAllUIAsync();
             var news = await _newsService.GetAllUIAsync();
+            var courseInfos = await _courseInfoService.GetAllUIAsync();
             return View(new HomeVM
             {
                 Icons = icons,
                 Sliders = sliders,
                 Settings = settings,
                 Events = events,
-                News = news
+                News = news,
+                CourseInfos = courseInfos
             });
         }
     }

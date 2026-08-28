@@ -1,4 +1,5 @@
 ﻿using MVC_MiniProject.Models;
+using MVC_MiniProject.ViewModels.CourseInfos;
 using MVC_MiniProject.ViewModels.Events;
 using MVC_MiniProject.ViewModels.Icons;
 using MVC_MiniProject.ViewModels.News;
@@ -13,5 +14,6 @@ namespace MVC_MiniProject.ViewModels
         public Dictionary<string, string> Settings { get; set; }
         public IEnumerable<EventUIVM> Events { get; set; }
         public IEnumerable<NewsUIVM> News { get; set; }
+        public IEnumerable<CourseInfoUIVM> CourseInfos { get; set; }
     }
 }

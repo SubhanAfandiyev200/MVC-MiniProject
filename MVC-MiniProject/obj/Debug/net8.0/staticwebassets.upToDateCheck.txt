@@ -14,6 +14,8 @@ wwwroot\images\elearn.jpg
 wwwroot\images\featured.jpg
 wwwroot\images\featured_author.jpg
 wwwroot\images\home_logo.png
+wwwroot\images\images.jpg
+wwwroot\images\images2.jpg
 wwwroot\images\index.jpg
 wwwroot\images\logo.png
 wwwroot\images\milestone_1.svg

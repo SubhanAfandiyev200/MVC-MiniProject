@@ -38,6 +38,56 @@ namespace MVC_MiniProject.Migrations
                     b.ToTable("Icons");
                 });
 
+            modelBuilder.Entity("MVC_MiniProject.Models.AboutPlatform", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AboutPlatforms");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.AboutVision", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AboutVision");
+                });
+
             modelBuilder.Entity("MVC_MiniProject.Models.Author", b =>
                 {
                     b.Property<int>("Id")
@@ -53,6 +103,69 @@ namespace MVC_MiniProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Authors");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.CourseImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseInfoId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseInfoId");
+
+                    b.ToTable("CourseImages");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.CourseInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsFeature")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsNew")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SalesCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("CourseInfos");
                 });
 
             modelBuilder.Entity("MVC_MiniProject.Models.Event", b =>
@@ -114,6 +227,23 @@ namespace MVC_MiniProject.Migrations
                     b.ToTable("News");
                 });
 
+            modelBuilder.Entity("MVC_MiniProject.Models.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Positions");
+                });
+
             modelBuilder.Entity("MVC_MiniProject.Models.Setting", b =>
                 {
                     b.Property<int>("Id")
@@ -164,6 +294,54 @@ namespace MVC_MiniProject.Migrations
                     b.ToTable("Sliders");
                 });
 
+            modelBuilder.Entity("MVC_MiniProject.Models.Teacher", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PositionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PositionId");
+
+                    b.ToTable("Teachers");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.CourseImage", b =>
+                {
+                    b.HasOne("MVC_MiniProject.Models.CourseInfo", "CourseInfo")
+                        .WithMany("CourseImages")
+                        .HasForeignKey("CourseInfoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("CourseInfo");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.CourseInfo", b =>
+                {
+                    b.HasOne("MVC_MiniProject.Models.Teacher", "Teacher")
+                        .WithMany("CourseInfos")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Teacher");
+                });
+
             modelBuilder.Entity("MVC_MiniProject.Models.News", b =>
                 {
                     b.HasOne("MVC_MiniProject.Models.Author", "Authors")
@@ -175,9 +353,35 @@ namespace MVC_MiniProject.Migrations
                     b.Navigation("Authors");
                 });
 
+            modelBuilder.Entity("MVC_MiniProject.Models.Teacher", b =>
+                {
+                    b.HasOne("MVC_MiniProject.Models.Position", "Position")
+                        .WithMany("Teachers")
+                        .HasForeignKey("PositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Position");
+                });
+
             modelBuilder.Entity("MVC_MiniProject.Models.Author", b =>
                 {
                     b.Navigation("News");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.CourseInfo", b =>
+                {
+                    b.Navigation("CourseImages");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.Position", b =>
+                {
+                    b.Navigation("Teachers");
+                });
+
+            modelBuilder.Entity("MVC_MiniProject.Models.Teacher", b =>
+                {
+                    b.Navigation("CourseInfos");
                 });
 #pragma warning restore 612, 618
         }

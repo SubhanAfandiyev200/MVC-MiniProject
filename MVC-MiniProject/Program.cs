@@ -15,6 +15,10 @@ builder.Services.AddScoped<ISettingService, SettingService>();
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<INewsService, NewsService>();
+builder.Services.AddScoped<ITeacherService, TeacherService>();
+builder.Services.AddScoped<ICourseInfoService, CourseInfoService>();
+builder.Services.AddScoped<IAboutPlatformService, AboutPlatformService>();
+builder.Services.AddScoped<IAboutVisionService, AboutVisionService>();
 
 var app = builder.Build();
 

@@ -3,70 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_B24N2SA_SQLEXPRESS/MVC_MiniProjectDb/True/SqlTable/dbo.Authors.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/DESKTOP_B24N2SA_SQLEXPRESS/MVC_MiniProjectDb/True/SqlTable/dbo.News.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\viewmodels\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\viewmodels\\news\\newsuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\viewmodels\\news\\newsuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\interfaces\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\interfaces\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Migrations\\20260827142130_AddedEventsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MVC-MiniProject\\Migrations\\20260827142130_AddedEventsTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\interfaces\\ieventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\models\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\viewmodels\\events\\eventuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\viewmodels\\events\\eventuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -76,143 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Authors [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_B24N2SA_SQLEXPRESS/MVC_MiniProjectDb/True/SqlTable/dbo.Authors.sql",
-              "ToolTip": "dbo.Authors [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-08-27T15:05:02.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dbo.News [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/DESKTOP_B24N2SA_SQLEXPRESS/MVC_MiniProjectDb/True/SqlTable/dbo.News.sql",
-              "ToolTip": "dbo.News [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-08-27T15:04:58.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NewsService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\NewsService.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\NewsService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\NewsService.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Services\\NewsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T14:56:12.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeVM.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\HomeVM.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\ViewModels\\HomeVM.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\HomeVM.cs",
-              "RelativeToolTip": "MVC-MiniProject\\ViewModels\\HomeVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T14:01:16.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NewsUIVM.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\News\\NewsUIVM.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\ViewModels\\News\\NewsUIVM.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\News\\NewsUIVM.cs",
-              "RelativeToolTip": "MVC-MiniProject\\ViewModels\\News\\NewsUIVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:50:36.971Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:58:29.28Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MVC-MiniProject\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAB4BAAAAAAAAAAAmwCoBAABfAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Detail\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\Detail\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Detail\\Index.cshtml",
+              "RelativeToolTip": "MVC-MiniProject\\Views\\Detail\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-27T14:26:46.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "INewsService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\Interfaces\\INewsService.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\Interfaces\\INewsService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\Interfaces\\INewsService.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Services\\Interfaces\\INewsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T14:53:53.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T14:00:10.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Program.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Program.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T14:28:22.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20260827142130_AddedEventsTable.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Migrations\\20260827142130_AddedEventsTable.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Migrations\\20260827142130_AddedEventsTable.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Migrations\\20260827142130_AddedEventsTable.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Migrations\\20260827142130_AddedEventsTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T14:21:30.824Z",
+              "WhenOpened": "2026-08-28T17:53:40.087Z",
               "EditorCaption": ""
             },
             {
@@ -226,84 +40,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\EventService.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\EventService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\EventService.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Services\\EventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:56:57.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IEventService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\Interfaces\\IEventService.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\Interfaces\\IEventService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\Interfaces\\IEventService.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Services\\Interfaces\\IEventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:55:42.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EventUIVM.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\Events\\EventUIVM.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\ViewModels\\Events\\EventUIVM.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\Events\\EventUIVM.cs",
-              "RelativeToolTip": "MVC-MiniProject\\ViewModels\\Events\\EventUIVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:50:10.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Author.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Models\\Author.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Models\\Author.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Models\\Author.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Models\\Author.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:48:00.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "News.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Models\\News.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Models\\News.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Models\\News.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Models\\News.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:47:10.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Models\\Event.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Models\\Event.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Models\\Event.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Models\\Event.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T13:45:01.704Z",
-              "EditorCaption": ""
             }
           ]
         }
