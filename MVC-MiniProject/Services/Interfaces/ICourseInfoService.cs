@@ -6,5 +6,6 @@ namespace MVC_MiniProject.Services.Interfaces
     {
         public Task<IEnumerable<CourseInfoUIVM>> GetAllUIAsync();
         public Task<CourseDetailUIVM> GetDetailUIAsync(int id);
+        public Task<IEnumerable<SearchCourseUIVM>> GetSearchedCourseUIAsync(string searchText);
     }
 }

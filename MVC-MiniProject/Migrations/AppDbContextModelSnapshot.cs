@@ -320,6 +320,23 @@ namespace MVC_MiniProject.Migrations
                     b.ToTable("Teachers");
                 });
 
+            modelBuilder.Entity("MVC_MiniProject.Models.Video", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Videos");
+                });
+
             modelBuilder.Entity("MVC_MiniProject.Models.CourseImage", b =>
                 {
                     b.HasOne("MVC_MiniProject.Models.CourseInfo", "CourseInfo")

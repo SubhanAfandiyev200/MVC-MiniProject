@@ -19,6 +19,7 @@ builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<ICourseInfoService, CourseInfoService>();
 builder.Services.AddScoped<IAboutPlatformService, AboutPlatformService>();
 builder.Services.AddScoped<IAboutVisionService, AboutVisionService>();
+builder.Services.AddScoped<IVideoService, VideoService>();
 
 var app = builder.Build();
 

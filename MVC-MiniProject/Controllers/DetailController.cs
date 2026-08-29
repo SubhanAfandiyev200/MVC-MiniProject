@@ -5,15 +5,9 @@ namespace MVC_MiniProject.Controllers
 {
     public class DetailController : Controller
     {
-        private readonly ICourseInfoService _courseService;
-        public DetailController(ICourseInfoService courseService)
+        public async Task<IActionResult> Index()
         {
-            _courseService = courseService;
-        }
-        public async Task<IActionResult> Index(int id)
-        {
-            var courseDetail = await _courseService.GetDetailUIAsync(id);
-            return View(courseDetail);
+            return View();
         }
     }
 }

@@ -53,5 +53,26 @@ namespace MVC_MiniProject.Services
                 }).ToArray()
             };
         }
+
+        public async Task<IEnumerable<SearchCourseUIVM>> GetSearchedCourseUIAsync(string searchText)
+        {
+            searchText ??= "";
+            var courses = await _dbContext.CourseInfos.Include(m => m.Teacher)
+                                                      .Include(m => m.CourseImages)
+                                                      .Where(m => m.Title.Contains(searchText)).Select(m=>new SearchCourseUIVM
+                                                      {
+                                                          Id = m.Id,
+                                                          Description = m.Description,
+                                                          Price = m.Price,
+                                                          SalesCount = m.SalesCount,
+                                                          Title = m.Title,
+                                                          TeacherName = m.Teacher.FullName,
+                                                          MainImage = m.CourseImages.FirstOrDefault(m => m.IsMain).Name,
+                                                          TeacherImage = m.Teacher.Image,
+                                                          IsFeature = m.IsFeature,
+                                                          IsNew = m.IsNew
+                                                      }).ToListAsync();
+            return courses;
+        }
     }
 }

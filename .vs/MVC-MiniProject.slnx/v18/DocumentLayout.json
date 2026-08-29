@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\detail\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\shared\\components\\searchcourse\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\shared\\components\\searchcourse\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\searchcourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\searchcourse\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\controllers\\searchcoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\controllers\\searchcoursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\courseinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\courseinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\viewcomponents\\searchcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\viewcomponents\\searchcourseviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\viewmodels\\courseinfos\\searchcourseuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\viewmodels\\courseinfos\\searchcourseuivm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\interfaces\\icourseinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\interfaces\\icourseinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +47,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Detail\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\Detail\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Detail\\Index.cshtml",
-              "RelativeToolTip": "MVC-MiniProject\\Views\\Detail\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Shared\\Components\\SearchCourse\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\Shared\\Components\\SearchCourse\\Default.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Shared\\Components\\SearchCourse\\Default.cshtml",
+              "RelativeToolTip": "MVC-MiniProject\\Views\\Shared\\Components\\SearchCourse\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-28T17:53:40.087Z",
+              "WhenOpened": "2026-08-29T18:30:04.47Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -40,6 +69,90 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\SearchCourse\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\SearchCourse\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\SearchCourse\\Index.cshtml",
+              "RelativeToolTip": "MVC-MiniProject\\Views\\SearchCourse\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-29T18:40:22.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SearchCourseViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewComponents\\SearchCourseViewComponent.cs",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\ViewComponents\\SearchCourseViewComponent.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewComponents\\SearchCourseViewComponent.cs",
+              "RelativeToolTip": "MVC-MiniProject\\ViewComponents\\SearchCourseViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T18:27:42.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseInfoService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\CourseInfoService.cs",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\CourseInfoService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\CourseInfoService.cs",
+              "RelativeToolTip": "MVC-MiniProject\\Services\\CourseInfoService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwDoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T18:20:16.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchCourseController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Controllers\\SearchCourseController.cs",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Controllers\\SearchCourseController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Controllers\\SearchCourseController.cs",
+              "RelativeToolTip": "MVC-MiniProject\\Controllers\\SearchCourseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T18:18:20.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SearchCourseUIVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\CourseInfos\\SearchCourseUIVM.cs",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\ViewModels\\CourseInfos\\SearchCourseUIVM.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\CourseInfos\\SearchCourseUIVM.cs",
+              "RelativeToolTip": "MVC-MiniProject\\ViewModels\\CourseInfos\\SearchCourseUIVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T18:06:01.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICourseInfoService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\Interfaces\\ICourseInfoService.cs",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\Interfaces\\ICourseInfoService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\Interfaces\\ICourseInfoService.cs",
+              "RelativeToolTip": "MVC-MiniProject\\Services\\Interfaces\\ICourseInfoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-29T18:04:51.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAYwEUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-29T18:01:48.6Z"
             }
           ]
         }

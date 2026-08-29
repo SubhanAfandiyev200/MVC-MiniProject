@@ -6,23 +6,9 @@ namespace MVC_MiniProject.Controllers
 {
     public class CourseController : Controller
     {
-        private readonly ISettingService _settingService;
-        private readonly ICourseInfoService _courseInfoService;
-        public CourseController(ISettingService settingService,
-                                ICourseInfoService courseInfoService)
-        {
-            _settingService = settingService;
-            _courseInfoService = courseInfoService;
-        }
         public async Task<IActionResult> Index()
         {
-            var settings = await _settingService.GetAllUIAsync();
-            var courseInfos = await _courseInfoService.GetAllUIAsync();
-            return View(new CourseVM
-            {
-                Settings = settings,
-                CourseInfos = courseInfos
-            });
+            return View();
         }
     }
 }

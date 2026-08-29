@@ -1,40 +1,6 @@
 ﻿
 @model AboutVM
 
-<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
-    <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-    <div class="search">
-        <form action="#" class="header_search_form menu_mm">
-            <input type="search" class="search_input menu_mm" placeholder="Search" required="required">
-            <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
-                <i class="fa fa-search menu_mm" aria-hidden="true"></i>
-            </button>
-        </form>
-    </div>
-    <nav class="menu_nav">
-        <ul class="menu_mm">
-            <li class="menu_mm"><a href="index-2.html">Home</a></li>
-            <li class="menu_mm"><a href="courses.html">Courses</a></li>
-            <li class="menu_mm"><a href="instructors.html">Instructors</a></li>
-            <li class="menu_mm"><a href="#">Events</a></li>
-            <li class="menu_mm"><a href="blog.html">Blog</a></li>
-            <li class="menu_mm"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="menu_extra">
-        <div class="menu_phone"><span class="menu_title">phone:</span>(009) 35475 6688933 32</div>
-        <div class="menu_social">
-            <span class="menu_title">follow us</span>
-            <ul>
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
 <div class="home">
 
     <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="~/images/about.jpg" data-speed="0.8"></div>
@@ -57,93 +23,8 @@
     </div>
 </div>
 
-<div class="about">
-    <div class="container">
-        <div class="row about_row row-lg-eq-height">
-            <div class="col-lg-6">
-                <div class="about_content">
-                    <div class="about_title">@Model.AboutPlatforms.Title</div>
-                    <div class="about_text">
-                        <p>@Model.AboutPlatforms.Description</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="about_image"><img src="~/images/@Model.AboutPlatforms.Image" alt="https://unsplash.com/jtylernix"></div>
-            </div>
-        </div>
-        <div class="row about_row row-lg-eq-height">
-            <div class="col-lg-6 order-lg-1 order-2">
-                <div class="about_image"><img src="~/images/@Model.AboutVisions.Image" alt=""></div>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-1">
-                <div class="about_content">
-                    <div class="about_title">@Model.AboutVisions.Title</div>
-                    <div class="about_text">
-                        <p>@Model.AboutVisions.Description</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@await Component.InvokeAsync("About")
 
-<div class="milestones">
+@await Component.InvokeAsync("Milestones");
 
-    <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="~/images/milestones.jpg" data-speed="0.8"></div>
-    <div class="container">
-        <div class="row milestones_container">
-
-            @foreach(var item in Model.Icons)
-            {
-                <div class="col-lg-3 milestone_col">
-                    <div class="milestone text-center">
-                        <div class="milestone_icon"><img src="~/images/@item.Name" alt=""></div>
-                        <div class="milestone_counter" data-end-value="1548">0</div>
-                        <div class="milestone_text">Online Courses</div>
-                    </div>
-                </div>
-            }
-
-        </div>
-    </div>
-</div>
-
-<div class="teachers">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="teachers_title text-center">Meet the Teachers</div>
-            </div>
-        </div>
-        <div class="row teachers_row">
-
-            @foreach(var item in Model.Teachers)
-            {
-                <div class="col-lg-4 col-md-6">
-                    <div class="teacher">
-                        <div class="teacher_image"><img src="~/images/@item.Image" alt="https://unsplash.com/nickkarvounis"></div>
-                        <div class="teacher_body text-center">
-                            <div class="teacher_title"><a href="#">@item.FullName</a></div>
-                            <div class="teacher_subtitle">@item.Position</div>
-                            <div class="teacher_social">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-
-        </div>
-        <div class="row">
-            <div class="col text-center">
-                <div class="button teachers_button"><a href="#">see all teachers<div class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></div></a></div>
-            </div>
-        </div>
-    </div>
-</div>
+@await Component.InvokeAsync("Teacher");
