@@ -1,0 +1,18 @@
+﻿@model EventEditVM
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Edit">
+        <div class="form-group">
+            <label for="category">Event</label>
+            <input asp-for="Title" type="text" class="form-control" id="title" placeholder="Title">
+            <span asp-validation-for="Title" class="text-danger"></span>
+            <input asp-for="Location" type="text" class="form-control" id="location" placeholder="Location">
+            <span asp-validation-for="Location" class="text-danger"></span>
+            <input asp-for="DateDay" type="text" class="form-control" id="dateDay" placeholder="DateDay">
+            <span asp-validation-for="DateDay" class="text-danger"></span>
+            <input asp-for="DateMonth" type="text" class="form-control" id="dateMonth" placeholder="DateMonth">
+            <span asp-validation-for="DateMonth" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>

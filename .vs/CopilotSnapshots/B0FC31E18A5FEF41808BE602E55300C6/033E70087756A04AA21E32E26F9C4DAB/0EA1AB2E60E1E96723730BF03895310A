@@ -1,0 +1,50 @@
+﻿@model EventCreateVM
+
+<main class="content">
+    <div class="container-fluid p-0">
+        <div class="row mb-2 mb-xl-3">
+            <div class="col-auto d-none d-sm-flex">
+                <h1 class="h3 d-line-height-1 mt-4">Create Event</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" asp-action="Create">
+                            <div class="mb-3">
+                                <label class="form-label" for="title">Event Title</label>
+                                <input asp-for="Title" type="text" class="form-control" id="title" placeholder="Enter event title">
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="location">Location</label>
+                                <input asp-for="Location" type="text" class="form-control" id="location" placeholder="Enter location">
+                                <span asp-validation-for="Location" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="dateDay">Date Day</label>
+                                <input asp-for="DateDay" type="text" class="form-control" id="dateDay" placeholder="Enter day">
+                                <span asp-validation-for="DateDay" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="dateMonth">Date Month</label>
+                                <input asp-for="DateMonth" type="text" class="form-control" id="dateMonth" placeholder="Enter month">
+                                <span asp-validation-for="DateMonth" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <a asp-action="Index" class="btn btn-light">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

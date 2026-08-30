@@ -1,0 +1,54 @@
+﻿@model EventDetailVM
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Card Başlanğıcı -->
+            <div class="card shadow-lg border-0" style="border-radius: 15px; overflow: hidden;">
+                <div class="row g-0">
+
+                    <!-- Sol tərəf: Tarix hissəsi -->
+                    <div class="col-4 bg-primary text-white d-flex flex-column align-items-center justify-content-center p-4">
+                        <h1 class="display-3 fw-bold mb-0">@Model.DateDay</h1>
+                        <h4 class="text-uppercase" style="letter-spacing: 2px;">@Model.DateMonth</h4>
+                    </div>
+
+                    <!-- Sağ tərəf: Məlumat hissəsi -->
+                    <div class="col-8">
+                        <div class="card-body p-4">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mb-2" style="font-size: 0.8rem;">
+                                    <li class="breadcrumb-item"><a asp-action="Index" class="text-decoration-none">Events</a></li>
+                                    <li class="breadcrumb-item active">Detail</li>
+                                </ol>
+                            </nav>
+
+                            <h6 class="text-primary fw-bold text-uppercase mb-1">Event Detail</h6>
+                            <h2 class="card-title fw-bold text-dark mb-3">@Model.Title</h2>
+
+                            <hr class="my-3">
+
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-danger p-2 rounded-circle me-3">
+                                    <i class="text-danger fw-bold"></i> 
+                                </div>
+                                <div>
+                                    <small class="text-muted d-block">Location</small>
+                                    <span class="fw-bold text-secondary">@Model.Location</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <a asp-action="Index" class="btn btn-outline-secondary btn-sm rounded-pill px-4">
+                                    ← Back to List
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Card Sonu -->
+        </div>
+    </div>
+</div>
