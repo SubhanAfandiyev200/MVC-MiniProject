@@ -1,0 +1,12 @@
+﻿@model AuthorEditVM
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Edit">
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input asp-for="Fullname" type="text" class="form-control" id="fullname" placeholder="Fullname">
+            <span asp-validation-for="Fullname" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
