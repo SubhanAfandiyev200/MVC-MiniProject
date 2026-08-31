@@ -93,3 +93,6 @@ wwwroot\admin\fonts\.gitkeep
 wwwroot\admin\css\app.css.map
 wwwroot\admin\css\app.css
 wwwroot\admin\js\main.js
+wwwroot\images\0c402f9a-4403-4d83-abe6-fc403f0d7732_instagram7.jpg
+wwwroot\images\410c4bca-3526-4d80-a369-437cafca9748_h3-team-img-2.png
+wwwroot\images\7f31c2de-b60d-4e92-81f2-863d3bce4ca2_h3-team-img-2.png

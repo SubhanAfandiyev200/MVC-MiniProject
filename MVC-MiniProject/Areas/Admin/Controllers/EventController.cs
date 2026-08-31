@@ -24,6 +24,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(EventCreateVM request)
         {
             if (!ModelState.IsValid)

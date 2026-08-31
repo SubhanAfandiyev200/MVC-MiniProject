@@ -22,6 +22,7 @@ builder.Services.AddScoped<IAboutVisionService, AboutVisionService>();
 builder.Services.AddScoped<IVideoService, VideoService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IPositionService, PositionService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 var app = builder.Build();
 

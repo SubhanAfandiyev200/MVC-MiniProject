@@ -26,6 +26,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(AuthorCreateVM request)
         {
             if (!ModelState.IsValid)
@@ -35,6 +36,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             await _authorService.CreateAsync(request);
             return RedirectToAction(nameof(Index));
         }
+        [HttpGet]
         public async Task<IActionResult> Detail(int id)
         {
             try

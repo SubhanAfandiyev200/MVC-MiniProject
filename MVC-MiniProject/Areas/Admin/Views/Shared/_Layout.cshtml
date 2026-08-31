@@ -50,6 +50,9 @@
 						<a class="sidebar-link" asp-area="Admin" asp-controller="Position" asp-action="Index">
 							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Position</span>
 						</a>
+						<a class="sidebar-link" asp-area="Admin" asp-controller="News" asp-action="Index">
+							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Latest News</span>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -125,7 +128,9 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
+			var lineChart = document.getElementById("chartjs-dashboard-line");
+			if (!lineChart) return;
+			var ctx = lineChart.getContext("2d");
 			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
 			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
 			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
@@ -157,7 +162,9 @@
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+			var pieChart = document.getElementById("chartjs-dashboard-pie");
+			if (!pieChart) return;
+			new Chart(pieChart, {
 				type: "pie",
 				data: {
 					labels: ["Chrome", "Firefox", "IE"],
@@ -178,7 +185,9 @@
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+			var barChart = document.getElementById("chartjs-dashboard-bar");
+			if (!barChart) return;
+			new Chart(barChart, {
 				type: "bar",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
@@ -206,6 +215,7 @@
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
+			if (!document.getElementById("world_map")) return;
 			var markers = [
 				{ coords: [31.230391, 121.473701], name: "Shanghai" },
 				{ coords: [28.704060, 77.102493], name: "Delhi" },
@@ -236,9 +246,11 @@
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
+			var datePicker = document.getElementById("datetimepicker-dashboard");
+			if (!datePicker) return;
 			var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
 			var defaultDate = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate();
-			document.getElementById("datetimepicker-dashboard").flatpickr({
+			datePicker.flatpickr({
 				inline: true,
 				prevArrow: "<span title=\"Previous month\">&laquo;</span>",
 				nextArrow: "<span title=\"Next month\">&raquo;</span>",

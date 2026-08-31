@@ -1,0 +1,22 @@
+@model NewsCreateVM
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>News</label>
+            @foreach (var author in Model.Authors)
+            {
+                <p>Id: @author.Id - @author.Fullname</p>
+            }
+            <input asp-for="Image" type="file" class="form-control">
+            <span asp-validation-for="Image" class="text-danger"></span>
+            <input asp-for="Question" type="text" class="form-control" id="question" placeholder="Title">
+            <span asp-validation-for="Question" class="text-danger"></span>
+            <input asp-for="Date" type="text" class="form-control" id="date" placeholder="Date">
+            <span asp-validation-for="Date" class="text-danger"></span>
+            <input asp-for="AuthorId" type="text" class="form-control" id="authorId" placeholder="AuthorId">
+            <span asp-validation-for="AuthorId" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>

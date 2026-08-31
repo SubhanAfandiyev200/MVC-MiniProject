@@ -26,6 +26,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(PositionCreateVM request)
         {
             if (!ModelState.IsValid)
