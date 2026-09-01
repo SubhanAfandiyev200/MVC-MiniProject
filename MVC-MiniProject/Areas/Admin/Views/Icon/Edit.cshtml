@@ -1,0 +1,23 @@
+﻿@model IconEditVM
+
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Icon</label>
+
+            @if (!string.IsNullOrEmpty(Model.ExistingImage))
+            {
+                <div class="mb-2">
+                    <img src="~/images/@Model.ExistingImage" width="150" />
+                </div>
+            }
+
+            <input asp-for="Name" type="file" class="form-control">
+            <span asp-validation-for="Name" class="text-danger"></span>
+            <input asp-for="ExistingImage" type="hidden">
+
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>

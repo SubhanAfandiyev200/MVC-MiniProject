@@ -19,7 +19,6 @@ builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<ICourseInfoService, CourseInfoService>();
 builder.Services.AddScoped<IAboutPlatformService, AboutPlatformService>();
 builder.Services.AddScoped<IAboutVisionService, AboutVisionService>();
-builder.Services.AddScoped<IVideoService, VideoService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IPositionService, PositionService>();
 builder.Services.AddScoped<IFileService, FileService>();
