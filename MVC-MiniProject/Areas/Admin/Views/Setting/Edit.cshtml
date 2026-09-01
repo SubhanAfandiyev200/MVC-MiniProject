@@ -1,0 +1,29 @@
+@model SettingEditVM
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Setting: @Model.Key</label>
+            <input type="hidden" asp-for="Key" />
+            <input type="hidden" asp-for="ExistingValue" />
+
+            @if (Model.Key.Equals("logo", StringComparison.OrdinalIgnoreCase))
+            {
+                @if (!string.IsNullOrEmpty(Model.ExistingValue))
+                {
+                    <div class="mb-2">
+                        <img src="~/images/@Model.ExistingValue" width="150" />
+                    </div>
+                }
+                <input asp-for="Image" type="file" class="form-control">
+                <span asp-validation-for="Image" class="text-danger"></span>
+            }
+            else
+            {
+                <input asp-for="Value" type="text" class="form-control" id="value" placeholder="Value">
+                <span asp-validation-for="Value" class="text-danger"></span>
+            }
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
