@@ -1,0 +1,33 @@
+﻿
+@model IEnumerable<TeacherVM>
+<div class="container mt-5">
+    <h1 class="text-center">Teachers</h1>
+    <a asp-action="Create" class="btn btn-success mt-5">Create</a>
+    <table class="table mt-3">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Fullname</th>
+                <th>Position</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img src="~/images/@item.Image" alt="Alternate Text" style="width:60px; height:60px; object-fit:contain;" /></td>
+                    <td>@item.FullName</td>
+                    <td>@item.Position</td>
+                    <td>
+                        <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-primary">Detail</a>
+                        <a class="btn btn-danger delete-teacher" data-id="@item.Id">Delete</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+

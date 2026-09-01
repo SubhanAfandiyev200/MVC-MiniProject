@@ -1,0 +1,20 @@
+﻿@model TeacherCreateVM
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Positions</label>
+            @foreach (var item in Model.Positions)
+            {
+                <p>Id: @item.Id - @item.Name</p>
+            }
+            <input asp-for="Image" type="file" class="form-control">
+            <span asp-validation-for="Image" class="text-danger"></span>
+            <input asp-for="Fullname" type="text" class="form-control" id="fullname" placeholder="Fullname">
+            <span asp-validation-for="Fullname" class="text-danger"></span>
+            <input asp-for="PositionId" type="text" class="form-control" id="positionId" placeholder="PositionId">
+            <span asp-validation-for="PositionId" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>
