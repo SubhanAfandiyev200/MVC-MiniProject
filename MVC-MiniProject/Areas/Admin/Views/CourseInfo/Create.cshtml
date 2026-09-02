@@ -1,0 +1,92 @@
+@model CourseInfoCreateVM
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Create Course Info</h2>
+    <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label for="Title">Title</label>
+            <input asp-for="Title" type="text" class="form-control" placeholder="Enter course title">
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Enter course description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="Price">Price</label>
+                    <input asp-for="Price" type="number" class="form-control" placeholder="Enter price">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="SalesCount">Sales Count</label>
+                    <input asp-for="SalesCount" type="number" class="form-control" placeholder="Enter sales count">
+                    <span asp-validation-for="SalesCount" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Teachers</label>
+            @if (Model.Teachers != null && Model.Teachers.Any())
+            {
+                @foreach (var teacher in Model.Teachers)
+                {
+                    <p>Id: @teacher.Id - @teacher.FullName</p>
+                }
+            }
+            else
+            {
+                <p class="text-muted">No teachers available</p>
+            }
+            <input asp-for="TeacherId" type="text" class="form-control" placeholder="Enter Teacher ID">
+            <span asp-validation-for="TeacherId" class="text-danger"></span>
+        </div>
+
+        <div class="card mb-3 p-3 bg-light">
+            <h5 class="mb-3">Display Options</h5>
+            <div class="form-check mb-2">
+                <input asp-for="IsFeature" type="checkbox" class="form-check-input" id="isFeature">
+                <label class="form-check-label" for="isFeature">
+                    <strong>Featured Course</strong> - Will be displayed in featured section on homepage
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input asp-for="IsNew" type="checkbox" class="form-check-input" id="isNew">
+                <label class="form-check-label" for="isNew">
+                    <strong>New Course</strong> - Will be displayed with "NEW" badge
+                </label>
+            </div>
+        </div>
+
+        <div class="card mb-3 p-3 bg-light">
+            <h5 class="mb-3">Course Images</h5>
+            <div class="form-group mb-0">
+                <label for="Images">Select Multiple Images</label>
+                <input asp-for="Images" type="file" class="form-control" multiple accept="image/*" id="imageInput">
+                <small class="form-text text-muted">
+                    <i class="fas fa-info-circle"></i> 
+                    <strong>Important:</strong> The <span class="text-primary">first image</span> you select will automatically be set as the <strong>main image</strong>.<br>
+                    You can change the main image later from the Detail page.
+                </small>
+                <span asp-validation-for="Images" class="text-danger d-block mt-2"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mr-2">Create Course</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+}

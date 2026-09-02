@@ -1,0 +1,127 @@
+@model CourseInfoEditVM
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Edit Course Info</h2>
+    <form class="forms-sample" method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group mb-3">
+            <label for="Title">Title</label>
+            <input asp-for="Title" type="text" class="form-control" placeholder="Enter course title">
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Enter course description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="Price">Price</label>
+                    <input asp-for="Price" type="number" class="form-control" placeholder="Enter price">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group mb-3">
+                    <label for="SalesCount">Sales Count</label>
+                    <input asp-for="SalesCount" type="number" class="form-control" placeholder="Enter sales count">
+                    <span asp-validation-for="SalesCount" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+            <label>Teachers</label>
+            @if (Model.Teachers != null && Model.Teachers.Any())
+            {
+                @foreach (var teacher in Model.Teachers)
+                {
+                    <p>Id: @teacher.Id - @teacher.FullName</p>
+                }
+            }
+            else
+            {
+                <p class="text-muted">No teachers available</p>
+            }
+            <input asp-for="TeacherId" type="text" class="form-control" placeholder="Enter Teacher ID">
+            <span asp-validation-for="TeacherId" class="text-danger"></span>
+        </div>
+
+        <div class="card mb-3 p-3 bg-light">
+            <h5 class="mb-3">Display Options</h5>
+            <div class="form-check mb-2">
+                <input asp-for="IsFeature" type="checkbox" class="form-check-input" id="isFeature">
+                <label class="form-check-label" for="isFeature">
+                    <strong>Featured Course</strong> - Will be displayed in featured section
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input asp-for="IsNew" type="checkbox" class="form-check-input" id="isNew">
+                <label class="form-check-label" for="isNew">
+                    <strong>New Course</strong> - Will be displayed with "NEW" badge
+                </label>
+            </div>
+        </div>
+
+        <hr />
+        <h5 class="mb-3">Existing Images</h5>
+        <p class="text-muted mb-3">
+            <small>To manage images (set main image or delete), use the <a asp-action="Detail" class="text-primary">Detail page</a>.</small>
+        </p>
+        <div class="row mb-4">
+            @if (Model.ExistingImages != null && Model.ExistingImages.Any())
+            {
+                @foreach (var image in Model.ExistingImages)
+                {
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img src="~/images/@image.Name" class="card-img-top" alt="Course Image" style="height: 150px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                @if (image.IsMain)
+                                {
+                                    <span class="badge bg-success">Main Image</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Additional</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <p class="text-muted">No existing images</p>
+                </div>
+            }
+        </div>
+
+        <hr />
+        <div class="card mb-3 p-3 bg-light">
+            <h5 class="mb-3">Add New Images (Optional)</h5>
+            <div class="form-group mb-0">
+                <label for="NewImages">Select Additional Images</label>
+                <input asp-for="NewImages" type="file" class="form-control" multiple accept="image/*">
+                <small class="form-text text-muted">
+                    <i class="fas fa-info-circle"></i> New images will be added as <strong>additional images</strong> (not main image).<br>
+                    To change the main image, please use the Detail page.
+                </small>
+                <span asp-validation-for="NewImages" class="text-danger d-block mt-2"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary mr-2">Update Course</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+}

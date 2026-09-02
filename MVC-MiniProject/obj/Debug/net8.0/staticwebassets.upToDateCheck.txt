@@ -14,6 +14,8 @@ wwwroot\styles\about.css
 wwwroot\plugins\video-js\Youtube.min.js
 wwwroot\plugins\video-js\video.min.js
 wwwroot\plugins\video-js\video-js.css
+wwwroot\plugins\scrollmagic\ScrollMagic.min.js
+wwwroot\plugins\parallax-js-master\parallax.min.js
 wwwroot\plugins\OwlCarousel2-2.2.1\owl.video.play.png
 wwwroot\plugins\OwlCarousel2-2.2.1\owl.theme.default.css
 wwwroot\plugins\OwlCarousel2-2.2.1\owl.carousel.js
@@ -37,6 +39,7 @@ wwwroot\js\custom.js
 wwwroot\js\courses.js
 wwwroot\js\contact.js
 wwwroot\js\about.js
+wwwroot\images\WhatsApp Image 2026-09-01 at 18.15.07.jpeg
 wwwroot\images\teacher_6.jpg
 wwwroot\images\teacher_5.jpg
 wwwroot\images\teacher_4.jpg
@@ -55,7 +58,7 @@ wwwroot\images\milestone_4.svg
 wwwroot\images\milestone_3.svg
 wwwroot\images\milestone_2.svg
 wwwroot\images\milestone_1.svg
-wwwroot\images\3df2cc29-47ac-4d25-b6f3-9e3efa6ff50b_logo.png
+wwwroot\images\logo.png
 wwwroot\images\index.jpg
 wwwroot\images\images2.jpg
 wwwroot\images\images.jpg
@@ -75,8 +78,12 @@ wwwroot\images\course_3.jpg
 wwwroot\images\course_2.jpg
 wwwroot\images\course_1.jpg
 wwwroot\images\about_1.jpg
-wwwroot\plugins\scrollmagic\ScrollMagic.min.js
-wwwroot\plugins\parallax-js-master\parallax.min.js
+wwwroot\images\5283bb67-851a-4297-a930-88eee082285a_about_1.jpg
+wwwroot\images\410c4bca-3526-4d80-a369-437cafca9748_h3-team-img-2.png
+wwwroot\images\3df2cc29-47ac-4d25-b6f3-9e3efa6ff50b_logo.png
+wwwroot\images\0c402f9a-4403-4d83-abe6-fc403f0d7732_instagram7.jpg
+wwwroot\images\03c47bab-f8c4-4b14-82b2-40c1cc0f0421_news_2.jpg
+wwwroot\admin\js\main.js
 wwwroot\admin\js\app.js.map
 wwwroot\admin\js\app.js.LICENSE.txt
 wwwroot\admin\js\app.js
@@ -92,10 +99,3 @@ wwwroot\admin\img\avatars\avatar-2.jpg
 wwwroot\admin\fonts\.gitkeep
 wwwroot\admin\css\app.css.map
 wwwroot\admin\css\app.css
-wwwroot\admin\js\main.js
-wwwroot\images\0c402f9a-4403-4d83-abe6-fc403f0d7732_instagram7.jpg
-wwwroot\images\410c4bca-3526-4d80-a369-437cafca9748_h3-team-img-2.png
-wwwroot\images\WhatsApp Image 2026-09-01 at 18.15.07.jpeg
-wwwroot\images\logo.png
-wwwroot\images\5283bb67-851a-4297-a930-88eee082285a_about_1.jpg
-wwwroot\images\03c47bab-f8c4-4b14-82b2-40c1cc0f0421_news_2.jpg

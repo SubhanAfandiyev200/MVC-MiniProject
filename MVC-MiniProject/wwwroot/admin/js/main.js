@@ -495,3 +495,66 @@ async function deleteAboutVision(id) {
         return false;
     }
 }
+
+
+
+
+
+
+// CourseInfo Delete
+let deleteCourseBtns = document.querySelectorAll(".delete-course");
+deleteCourseBtns.forEach(btn => {
+    btn.addEventListener("click", async function (e) {
+        e.preventDefault();
+        let courseId = parseInt(this.getAttribute("data-id"));
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this! All images will be deleted.",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                const success = await deleteCourse(courseId);
+                if (success) {
+                    this.closest('tr').remove();
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Course has been deleted.",
+                        icon: "success"
+                    });
+                }
+            }
+        });
+    });
+});
+
+async function deleteCourse(id) {
+    const url = `/admin/courseinfo/delete?id=${id}`;
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        return result.success;
+
+    } catch (error) {
+        console.error('Error during fetch:', error);
+        Swal.fire({
+            title: "Error!",
+            text: "An error occurred while deleting the course.",
+            icon: "error"
+        });
+        return false;
+    }
+}

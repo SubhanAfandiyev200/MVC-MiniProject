@@ -1,0 +1,83 @@
+@model IEnumerable<CourseInfoVM>
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Course Infos</h1>
+        <a asp-action="Create" class="btn btn-success">
+            <i class="fas fa-plus"></i> Create New Course
+        </a>
+    </div>
+
+    <table class="table table-striped table-hover mt-3">
+        <thead class="table-dark">
+            <tr>
+                <th>Main Image</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Sales</th>
+                <th>Teacher</th>
+                <th>Images</th>
+                <th>Status</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.MainImage))
+                        {
+                            <img src="~/images/@item.MainImage" alt="@item.Title" style="width: 80px; height: 60px; object-fit: cover; border-radius: 5px;" />
+                        }
+                        else
+                        {
+                            <span class="text-muted">No image</span>
+                        }
+                    </td>
+                    <td><strong>@item.Title</strong></td>
+                    <td>@(item.Description.Length > 50 ? item.Description.Substring(0, 50) + "..." : item.Description)</td>
+                    <td><span class="text-success fw-bold">$@item.Price</span></td>
+                    <td>@item.SalesCount</td>
+                    <td>@item.Teacher</td>
+                    <td><span class="badge bg-info">@item.ImageCount images</span></td>
+                    <td>
+                        @if (item.IsFeature)
+                        {
+                            <span class="badge bg-warning text-dark mb-1">Featured</span><br />
+                        }
+                        @if (item.IsNew)
+                        {
+                            <span class="badge bg-success">New</span>
+                        }
+                        @if (!item.IsFeature && !item.IsNew)
+                        {
+                            <span class="text-muted">-</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-primary btn-sm" title="View Details & Manage Images">
+                                <i class="fas fa-eye"></i> Detail
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm" title="Edit Course">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm delete-course" data-id="@item.Id" title="Delete Course">
+                                <i class="fas fa-trash"></i> Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning text-center">
+            <h4>No courses found</h4>
+            <p>Click "Create New Course" to add your first course.</p>
+        </div>
+    }
+</div>
