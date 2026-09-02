@@ -81,7 +81,8 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             }
             catch (NotFoundException)
             {
-                return NotFound();
+                HttpContext.Response.Redirect("/NotFound/Index");
+                return Content(string.Empty);
             }
         }
         [HttpPost]

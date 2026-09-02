@@ -383,3 +383,115 @@ async function deleteTeacher(id) {
         return false;
     }
 }
+
+
+
+
+
+
+let deleteAboutPlatformBtns = document.querySelectorAll(".delete-aboutPlatform");
+deleteAboutPlatformBtns.forEach(btn => {
+    btn.addEventListener("click", async function (e) {
+        e.preventDefault();
+        let aboutPlatformId = parseInt(this.getAttribute("data-id"));
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                await deleteAboutPlatform(aboutPlatformId);
+                this.parentNode.parentNode.remove()
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+            }
+        });
+    });
+});
+
+async function deleteAboutPlatform(id) {
+    const url = `/admin/aboutplatform/delete?id=${id}`;
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        return true;
+
+    } catch (error) {
+        console.error('Error during fetch:', error);
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+let deleteAboutVisionBtns = document.querySelectorAll(".delete-aboutVision");
+deleteAboutVisionBtns.forEach(btn => {
+    btn.addEventListener("click", async function (e) {
+        e.preventDefault();
+        let aboutVisionId = parseInt(this.getAttribute("data-id"));
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then(async (result) => {
+            if (result.isConfirmed) {
+                await deleteAboutVision(aboutVisionId);
+                this.parentNode.parentNode.remove()
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+            }
+        });
+    });
+});
+
+async function deleteAboutVision(id) {
+    const url = `/admin/aboutvision/delete?id=${id}`;
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        return true;
+
+    } catch (error) {
+        console.error('Error during fetch:', error);
+        return false;
+    }
+}

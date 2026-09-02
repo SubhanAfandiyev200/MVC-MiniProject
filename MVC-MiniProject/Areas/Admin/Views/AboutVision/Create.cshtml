@@ -1,0 +1,16 @@
+﻿@model AboutVisionCreateVM
+<div class="container mt-5">
+    <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+        <div class="form-group">
+            <label>Lower About</label>
+            <input asp-for="Image" type="file" class="form-control">
+            <span asp-validation-for="Image" class="text-danger"></span>
+            <input asp-for="Title" type="text" class="form-control" id="title" placeholder="Title">
+            <span asp-validation-for="Title" class="text-danger"></span>
+            <input asp-for="Description" type="text" class="form-control" id="description" placeholder="Description">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </form>
+</div>

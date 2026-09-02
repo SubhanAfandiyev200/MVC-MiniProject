@@ -1,0 +1,78 @@
+﻿@model AboutPlatformDetailVM
+
+<main class="content">
+    <div class="container-fluid p-0">
+        <div class="row mb-2 mb-xl-3">
+            <div class="col-auto d-none d-sm-flex">
+                <h1 class="h3 d-line-height-1 mt-4">Upper About Detail</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-white">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a asp-action="Index" class="text-decoration-none">Upper Abouts</a></li>
+                                <li class="breadcrumb-item active">Detail</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="card-body p-4">
+
+                        <!-- Images -->
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <div class="border rounded-3 p-4 h-100 d-flex flex-column align-items-center justify-content-center bg-light">
+                                    <span class="badge bg-secondary mb-3">Image</span>
+                                    <img src="~/images/@Model.Image" alt="Logo" class="img-fluid rounded" style="max-height: 160px; object-fit: contain;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <!-- Info -->
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width:42px; height:42px; flex-shrink:0;">
+                                        <i class="align-middle" data-feather="type"></i>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted d-block">Upper About Title</small>
+                                        <span class="fw-semibold fs-5">@Model.Title</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width:42px; height:42px; flex-shrink:0;">
+                                        <i class="align-middle" data-feather="align-left"></i>
+                                    </div>
+                                    <div>
+                                        <small class="text-muted d-block">Upper About Description</small>
+                                        <span class="fw-semibold">@Model.Description</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <a asp-action="Index" class="btn btn-outline-secondary" role="button">
+                                    <i class="align-middle me-1" data-feather="arrow-left"></i> Back to List
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

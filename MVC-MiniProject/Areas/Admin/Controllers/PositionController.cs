@@ -95,6 +95,12 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             {
                 return View(request);
             }
+            bool isExist = await _positionService.ExistAsync(request.Name);
+            if (isExist)
+            {
+                ModelState.AddModelError("Name", "Position already exists!");
+                return View(request);
+            }
             await _positionService.EditAsync(id, request);
             return RedirectToAction(nameof(Index));
         }
