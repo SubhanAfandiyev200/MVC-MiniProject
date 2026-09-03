@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC_MiniProject.Exceptions;
 using MVC_MiniProject.Services.Interfaces;
 using MVC_MiniProject.ViewModels.AboutPlatforms;
@@ -7,6 +8,7 @@ using MVC_MiniProject.ViewModels.AboutVisions;
 namespace MVC_MiniProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class AboutVisionController : Controller
     {
         private readonly IAboutVisionService _aboutVisionService;
@@ -34,12 +36,14 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             }
         }
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(AboutVisionCreateVM request)
         {
             if (!ModelState.IsValid)

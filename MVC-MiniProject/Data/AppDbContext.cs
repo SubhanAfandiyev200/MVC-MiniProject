@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MVC_MiniProject.Models;
 using MVC_MiniProject.Services.Interfaces;
 using System.Drawing;
 
 namespace MVC_MiniProject.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public DbSet<Icon> Icons { get; set; }
         public DbSet<Slider> Sliders { get; set; }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC_MiniProject.Exceptions;
 using MVC_MiniProject.Services;
 using MVC_MiniProject.Services.Interfaces;
@@ -8,6 +9,7 @@ using MVC_MiniProject.ViewModels.Events;
 namespace MVC_MiniProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class AuthorController : Controller
     {
         private readonly IAuthorService _authorService;
@@ -21,12 +23,14 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             return View(await _authorService.GetAllAsync());
         }
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(AuthorCreateVM request)
         {
             if (!ModelState.IsValid)

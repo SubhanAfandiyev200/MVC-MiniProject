@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC_MiniProject.Exceptions;
 using MVC_MiniProject.Services;
 using MVC_MiniProject.Services.Interfaces;
@@ -7,6 +8,7 @@ using MVC_MiniProject.ViewModels.Icons;
 namespace MVC_MiniProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class IconController : Controller
     {
         private readonly IIconService _iconService;
@@ -34,12 +36,14 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             }
         }
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(IconCreateVM request)
         {
             if (!ModelState.IsValid)

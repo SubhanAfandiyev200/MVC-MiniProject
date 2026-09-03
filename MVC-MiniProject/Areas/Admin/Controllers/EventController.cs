@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC_MiniProject.Exceptions;
 using MVC_MiniProject.Services.Interfaces;
 using MVC_MiniProject.ViewModels.Events;
@@ -6,6 +7,7 @@ using MVC_MiniProject.ViewModels.Events;
 namespace MVC_MiniProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class EventController : Controller
     {
         private readonly IEventService _eventService;
@@ -19,12 +21,14 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             return View(await _eventService.GetAllAsync());
         }
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(EventCreateVM request)
         {
             if (!ModelState.IsValid)

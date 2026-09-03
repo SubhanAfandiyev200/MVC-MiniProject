@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MVC_MiniProject.Exceptions;
 using MVC_MiniProject.Services.Interfaces;
@@ -6,6 +7,7 @@ using MVC_MiniProject.ViewModels.CourseInfos;
 namespace MVC_MiniProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class CourseInfoController : Controller
     {
         private readonly ICourseInfoService _courseInfoService;
@@ -39,6 +41,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create()
         {
             return View(new CourseInfoCreateVM
@@ -49,6 +52,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(CourseInfoCreateVM request)
         {
             request.Teachers = await _teacherService.GetAllAsync();

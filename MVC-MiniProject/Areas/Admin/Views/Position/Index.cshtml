@@ -2,7 +2,10 @@
 @model IEnumerable<PositionVM>
 <div class="container mt-5">
     <h1 class="text-center">Positions</h1>
-    <a asp-action="Create" class="btn btn-success mt-5">Create</a>
+    @if (User.Identity.IsAuthenticated && User.IsInRole("SuperAdmin"))
+    {
+        <a asp-action="Create" class="btn btn-success mt-5">Create</a>
+    }
     <table class="table mt-3">
         <thead>
             <tr>

@@ -41,6 +41,13 @@
 						<a class="sidebar-link" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
 							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
 						</a>
+						@if (User.Identity.IsAuthenticated && User.IsInRole("SuperAdmin"))
+						{
+							<a class="sidebar-link" asp-area="Admin" asp-controller="Account" asp-action="Index">
+								<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">User</span>
+							</a>
+						}
+						
 						<a class="sidebar-link" asp-area="Admin" asp-controller="Event" asp-action="Index">
 							<i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Event</span>
 						</a>
@@ -103,8 +110,32 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-								<span class="text-dark">Useri bura yazdirarsan yaddan cixmasin</span>
+								@if (User.Identity.IsAuthenticated)
+								{
+									@inject Microsoft.AspNetCore.Identity.UserManager<MVC_MiniProject.Models.AppUser> UserManager
+									var user = await UserManager.FindByNameAsync(User.Identity.Name);
+									<span class="text-dark">@user.FullName</span>
+								}
+								else
+								{
+									<span class="text-dark">Guest</span>
+								}
 							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								@if (User.Identity.IsAuthenticated)
+								{
+									<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+									<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="settings"></i> Settings</a>
+									<div class="dropdown-divider"></div>
+									<form asp-area="" asp-controller="Account" asp-action="LogOut" method="post" style="display:inline;">
+										<button type="submit" class="dropdown-item"><i class="align-middle me-1" data-feather="log-out"></i> Log out</button>
+									</form>
+								}
+								else
+								{
+									<a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Login"><i class="align-middle me-1" data-feather="log-in"></i> Login</a>
+								}
+							</div>
 						</li>
 					</ul>
 				</div>

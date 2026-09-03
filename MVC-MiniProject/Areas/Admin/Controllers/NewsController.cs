@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC_MiniProject.Exceptions;
 using MVC_MiniProject.Services.Interfaces;
 using MVC_MiniProject.ViewModels.News;
@@ -6,6 +7,7 @@ using MVC_MiniProject.ViewModels.News;
 namespace MVC_MiniProject.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class NewsController : Controller
     {
         private readonly INewsService _newsService;
@@ -35,6 +37,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
             }
         }
         [HttpGet]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create()
         {
             return View(new NewsCreateVM
@@ -44,6 +47,7 @@ namespace MVC_MiniProject.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Create(NewsCreateVM request)
         {
             request.Authors = await _authorService.GetAllAsync();
