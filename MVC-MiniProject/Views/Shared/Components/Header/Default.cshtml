@@ -19,18 +19,69 @@
                             <div class="top_bar_login ml-auto">
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                    <div class="login_button" style="margin-right: 15px;"><a href="#">Welcome, @Model.UserFullName</a></div>
-                                    <div class="login_button">
-                                        <form asp-controller="Account" asp-action="LogOut" method="post" style="display:inline;">
-                                            <button type="submit" style="background:none; border:none; color:#fff; cursor:pointer; text-decoration:underline;">Log Out</button>
+                                    <div class="header_top_login">
+                                        <span class="welcome_text">Welcome, @Model.UserFullName</span>
+                                        <span class="divider">/</span>
+                                        <form asp-controller="Account" asp-action="LogOut" method="post" class="logout_form">
+                                            <button type="submit" class="logout_btn">Log Out</button>
                                         </form>
                                     </div>
                                 }
                                 else
                                 {
-                                    <div class="login_button"><a asp-controller="Account" asp-action="Register">Register</a></div>
-                                    <div class="login_button"><a asp-controller="Account" asp-action="Login">Login</a></div>
+                                    <div class="header_top_login">
+                                        <a asp-controller="Account" asp-action="Register">Register</a>
+                                        <span class="divider">/</span>
+                                        <a asp-controller="Account" asp-action="Login">Login</a>
+                                    </div>
                                 }
+
+                                <style>
+                                                                    .header_top_login {
+                                                                        display: flex;
+                                                                        align-items: center;
+                                                                        gap: 10px;
+                                                                    }
+
+                                                                        .header_top_login a,
+                                                                        .header_top_login .welcome_text {
+                                                                            color: #ffffff;
+                                                                            font-weight: 700;
+                                                                            font-size: 13px;
+                                                                            text-transform: uppercase;
+                                                                            letter-spacing: 0.6px;
+                                                                            text-decoration: none;
+                                                                            transition: color 0.2s ease;
+                                                                        }
+
+                                                                            .header_top_login a:hover {
+                                                                                color: #ff7a00;
+                                                                            }
+
+                                                                        .header_top_login .divider {
+                                                                            color: #ffffff;
+                                                                            opacity: 0.4;
+                                                                            font-weight: 400;
+                                                                        }
+
+                                                                        .header_top_login .logout_btn {
+                                                                            background: none;
+                                                                            border: none;
+                                                                            color: #ffffff;
+                                                                            font-weight: 700;
+                                                                            font-size: 13px;
+                                                                            text-transform: uppercase;
+                                                                            letter-spacing: 0.6px;
+                                                                            cursor: pointer;
+                                                                            padding: 0;
+                                                                            font-family: inherit;
+                                                                            transition: color 0.2s ease;
+                                                                        }
+
+                                                                            .header_top_login .logout_btn:hover {
+                                                                                color: #ff7a00;
+                                                                            }
+                                </style>
                             </div>
                         </div>
                     </div>
