@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\viewmodels\\events\\eventcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\viewmodels\\events\\eventcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|c:\\users\\user\\desktop\\mvc-miniproject\\mvc-miniproject\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EF285C0-54BB-EED1-7B89-701F45CBFE3C}|MVC-MiniProject\\MVC-MiniProject.csproj|solutionrelative:mvc-miniproject\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,34 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Services\\AccountService.cs",
-              "RelativeToolTip": "MVC-MiniProject\\Services\\AccountService.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAowH8AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T16:36:32.551Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "RelativeToolTip": "MVC-MiniProject\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-04T21:56:07.082Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -61,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventCreateVM.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\Events\\EventCreateVM.cs",
-              "RelativeDocumentMoniker": "MVC-MiniProject\\ViewModels\\Events\\EventCreateVM.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MVC-MiniProject\\MVC-MiniProject\\ViewModels\\Events\\EventCreateVM.cs",
-              "RelativeToolTip": "MVC-MiniProject\\ViewModels\\Events\\EventCreateVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T17:17:33.652Z",
-              "EditorCaption": ""
             }
           ]
         }
